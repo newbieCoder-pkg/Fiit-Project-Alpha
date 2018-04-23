@@ -1009,7 +1009,7 @@ body {
 
 .work--lockup .slider--item-center {
     position: relative;
-    top: 30px;
+    top: 16px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
