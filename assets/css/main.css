@@ -2099,6 +2099,20 @@ body {
 }
 
 @media (max-width: 767px) {
+    .pricing h2 {
+        display: none;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .work h2 {
+        display: none;
+
+    }
+}
+
+@media (max-width: 767px) {
     .button {
         color: #111;
         padding: 10px 15px;
