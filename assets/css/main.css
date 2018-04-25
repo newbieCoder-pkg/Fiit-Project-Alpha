@@ -1851,32 +1851,35 @@ body {
 }
 
 .footer_social {
-  list-style: none;
-  padding: 0;
-  width: fit-content;
+    list-style: none;
+    padding: 0;
+    width: fit-content;
     align-self: center
 }
+
 .footer_social li {
-  display: inline-block;
-  margin: 5px;
-}
-.footer_social li a {
-  border: solid 1px #ecff5f;
-  display: block;
-  border-radius: 25px;
-  padding: 5px;
-  font-size: 24px;
-  color: #ecff5f;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-}
-.footer_social li a:hover {
-  background-color: #ecff5f;
-  color: #ffffff;
+    display: inline-block;
+    margin: 5px;
 }
 
-.colorGreen{
+.footer_social li a {
+    border: solid 1px #ecff5f;
+    display: block;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 24px;
+    color: #ecff5f;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.footer_social li a:hover {
+    background-color: #ecff5f;
+    color: #ffffff;
+}
+
+.colorGreen {
     color: #ecff5f
 }
 
@@ -1885,6 +1888,7 @@ body {
 }
 
 /* Create three columns of equal width */
+
 .columns {
     float: left;
     width: 33.3%;
@@ -1892,23 +1896,28 @@ body {
 }
 
 /* Style the list */
+
 .price {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 20px;
     background-color: #131313;
     box-shadow: 5px;
+    max-height: max-content;
+
 }
 
 /* Add shadows on hover */
+
 .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
 }
 
 /* Pricing header */
+
 .price .header {
     background-color: #111;
     color: white;
@@ -1924,17 +1933,20 @@ body {
 }
 
 /* List items */
+
 .price li {
     padding: 20px;
     text-align: center;
 }
 
 /* Grey list item */
+
 .price .grey {
     font-size: 20px;
 }
 
 /* The "Sign Up" button */
+
 .button {
     color: #111;
     padding: 15px 30px;
@@ -1949,6 +1961,7 @@ body {
 
 /* Change the width of the three columns to 100% 
 (to stack horizontally on small screens) */
+
 @media only screen and (max-width: 600px) {
     .columns {
         width: 100%;
@@ -1957,25 +1970,13 @@ body {
 
 .pricing-tables {
     position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 960px;
-    max-width: 80%;
+    display: flow-root;
+    width: 700px;
+    max-width: 75%;
     height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
-    overflow: scroll;
-    
+
 }
 
 
@@ -1996,13 +1997,118 @@ body {
         justify-content: center;
         display: flow-root;
         top: 10%;
-        
+
     }
 }
 
-.pricing-title{
-        margin-top: 0 auto;
+.pricing-title {
+    margin-top: 0 auto;
     font-size: 25px;
     text-align: center
-    
+}
+
+.pricing {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 960px;
+    max-width: 80%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto
+}
+
+@media (max-width: 1180px) {
+    .pricing {
+        max-width: 100%
+    }
+}
+
+.pricing h2 {
+    font-size: 25px;
+    text-align: center
+}
+
+.pricing--lockup {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+    .pricing--lockup {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-height: 520px;
+        margin-left: 0;
+        max-width: min-content;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing {
+        max-width: 100%;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .price {
+        list-style-type: none;
+        padding: 0;
+        margin: 5px;
+        -webkit-transition: 0.3s;
+        border-radius: 20px;
+        background-color: #131313;
+        box-shadow: 5px;
+        max-height: max-content;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .price li {
+        padding: 10px;
+        text-align: center;
+        height: 55px;
+        font-size: 13px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .price .grey {
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .button {
+        color: #111;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 200;
+        border-radius: 20px;
+        background: #ecff5f;
+
+    }
 }
