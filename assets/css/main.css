@@ -1,36 +1,4 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Black.eot");
-    src: local("☺"), url("fonts/Montserrat-Black.woff") format("woff"), url("fonts/Montserrat-Black.ttf") format("truetype"), url("fonts/Montserrat-Black.svg") format("svg");
-    font-weight: 900;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Bold.eot");
-    src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
-    font-weight: 700;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Regular.eot");
-    src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Light.eot");
-    src: local("☺"), url("fonts/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat-Light.ttf") format("truetype"), url("fonts/Montserrat-Light.svg") format("svg");
-    font-weight: 300;
-    font-style: normal
-}
-
-@font-face {
     font-family: 'mainFont';
     src: url("fonts/texgyreadventor-regular.otf")
 }
@@ -291,7 +259,7 @@ body {
     background-color: #0c0c0c;
     font-size: 14px;
     line-height: 1.6;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%
@@ -685,7 +653,8 @@ body {
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity .4s ease-in-out;
-    transition: opacity .4s ease-in-out
+    transition: opacity .4s ease-in-out;
+    font-family: mainFontBold, sans-serif;
 }
 
 .side-nav li.is-active::before {
@@ -824,11 +793,15 @@ body {
 
 .intro--options h3 {
     font-size: 16px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .intro--options p {
-    margin-bottom: 0
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    font-weight: 600;
 }
 
 @media (max-width: 900px) {
@@ -1869,11 +1842,12 @@ body {
 
 .footer_social li a:hover {
     background-color: #ecff5f;
-    color: #ffffff;
+    color: #111;
 }
 
 .colorGreen {
-    color: #ecff5f
+    color: #ecff5f;
+    font-weight: 700;
 }
 
 * {
@@ -1942,12 +1916,13 @@ body {
 
 .button {
     color: #111;
-    padding: 15px 30px;
+    padding: 12px 25px;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
-    font-weight: 200;
+font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
     border-radius: 20px;
     background: #ecff5f;
 }
