@@ -1308,6 +1308,11 @@ body {
     }
 }
 
+.about--us {    
+    text-align: center;
+    margin-bottom: 40px;
+    }
+
 .contact {
     position: fixed;
     top: 0;
@@ -1432,7 +1437,7 @@ body {
 }
 
 .hire h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     font-size: 30px;
     text-align: center
 }
@@ -1829,10 +1834,9 @@ body {
 }
 
 .footer_social li a {
-    border: solid 1px #ecff5f;
     display: block;
     border-radius: 25px;
-    padding: 5px;
+    padding: 6px;
     font-size: 24px;
     color: #ecff5f;
     width: 50px;
@@ -1867,10 +1871,10 @@ body {
 .price {
     list-style-type: none;
     padding: 0;
-    margin: 10px;
+    margin: 6px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #131313;
     box-shadow: 5px;
     max-height: max-content;
@@ -1902,7 +1906,7 @@ body {
 /* List items */
 
 .price li {
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -2053,7 +2057,7 @@ font-family: 'Nunito Sans', sans-serif;
     .price li {
         padding: 10px;
         text-align: center;
-        height: 45px;
+        height: 50px;
         font-size: 13px;
 
     }
@@ -2101,7 +2105,8 @@ font-family: 'Nunito Sans', sans-serif;
 }
 }
 @media (max-width: 767px) {.google--badge {
-    height: 90px;
+        margin-top: 10px;
+    height: 70px;
     align-self: center;
 }
 }
